@@ -11,7 +11,7 @@ basic.forever(function () {
     if (input.logoIsPressed()) {
         hummingbird.setPositionServo(FourPort.Two, input.rotation(Rotation.Pitch) + 3)
     } else {
-        hummingbird.setPositionServo(FourPort.One, input.rotation(Rotation.Pitch) * 3)
+        hummingbird.setPositionServo(FourPort.One, input.rotation(Rotation.Pitch) + 3)
     }
     if (input.buttonIsPressed(Button.AB)) {
         hummingbird.setRotationServo(FourPort.Three, 100)
